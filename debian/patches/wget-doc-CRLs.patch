@@ -1,0 +1,26 @@
+Author: Noël Köthe <noel@debian.org>
+Date:   Wed, 05 Nov 2014 12:10:41 +0100
+
+	document no CRLs are checked.
+	See bug https://savannah.gnu.org/bugs/?43501
+
+--- a/doc/wget.texi	2014-11-05 12:03:10.848353361 +0100
++++ b/doc/wget.texi	2014-11-05 12:08:46.831481483 +0100
+@@ -165,6 +165,17 @@
+ @c man end
+ 
+ @item
++@ignore
++@c man begin DESCRIPTION
++
++@c man end
++@end ignore
++@c man begin DESCRIPTION
++Wget does not support Client Revocation Lists (CRLs) so the HTTPS
++certificate you are connecting to might be revoked by the siteowner.
++@c man end
++
++@item
+ Wget supports proxy servers, which can lighten the network load, speed
+ up retrieval and provide access behind firewalls.  Wget uses the passive
+ @sc{ftp} downloading by default, active @sc{ftp} being an option.

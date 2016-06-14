@@ -1,0 +1,5 @@
+wget-doc-remove-usr-local-in-sample.wgetrc
+wget-doc-remove-usr-local-in-wget.texi
+wget-passive_ftp-default
+wget-doc-CRLs.patch
+CVE-2016-4971.patch
