@@ -3,3 +3,10 @@ wget-doc-remove-usr-local-in-wget.texi
 wget-passive_ftp-default
 wget-doc-CRLs.patch
 CVE-2016-4971.patch
+Sanitize-value-sent-to-memset-to-prevent-SEGFAULT.patch
+CVE-2016-7098-1.patch
+CVE-2016-7098-2.patch
+CVE-2016-7098-3.patch
+CVE-2017-6508.patch
+CVE-2017-13089.patch
+CVE-2017-13090.patch

@@ -1,3 +1,34 @@
+wget (1.17.1-1ubuntu1.3) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: race condition leading to access list bypass
+    - debian/patches/CVE-2016-7098-1.patch: limit file mode in src/http.c.
+    - debian/patches/CVE-2016-7098-2.patch: add .tmp to temp files in
+      src/http.c.
+    - debian/patches/CVE-2016-7098-3.patch: replace asprintf by aprint in
+      src/http.c.
+    - CVE-2016-7098
+  * SECURITY UPDATE: CRLF injection in url_parse
+    - debian/patches/CVE-2017-6508.patch: check for invalid control
+      characters in src/url.c.
+    - CVE-2017-6508
+  * SECURITY UPDATE: stack overflow in HTTP protocol handling
+    - debian/patches/CVE-2017-13089.patch: return error on negative chunk
+      size in src/http.c.
+    - CVE-2017-13089
+  * SECURITY UPDATE: heap overflow in HTTP protocol handling
+    - debian/patches/CVE-2017-13090.patch: stop processing on negative
+      chunk size in src/retr.c.
+    - CVE-2017-13090
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 23 Oct 2017 15:36:01 -0400
+
+wget (1.17.1-1ubuntu1.2) xenial-proposed; urgency=medium
+
+  * debian/patches/Sanitize-value-sent-to-memset-to-prevent-SEGFAULT.patch
+    upstream commited 7099f489 patch to fix segmentation fault (LP: #1573307)
+
+ -- Chen-Han Hsiao (Stanley) <stanley.hsiao@canonical.com>  Fri, 24 Feb 2017 12:24:53 -0800
+
 wget (1.17.1-1ubuntu1.1) xenial-security; urgency=medium
 
   * SECURITY UPDATE: http to ftp redirect spoofed filenames
