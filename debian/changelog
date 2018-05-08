@@ -1,3 +1,12 @@
+wget (1.17.1-1ubuntu1.4) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: Cookie injection vulnerability
+    - debian/patches/CVE-2018-0494.patch: fix cooking injection
+      in src/http.c.
+    - CVE-2018-0494
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Tue, 08 May 2018 14:00:12 -0300
+
 wget (1.17.1-1ubuntu1.3) xenial-security; urgency=medium
 
   * SECURITY UPDATE: race condition leading to access list bypass
