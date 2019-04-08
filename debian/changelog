@@ -1,3 +1,12 @@
+wget (1.17.1-1ubuntu1.5) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: Buffer overflow
+    - debian/patches/CVE-2019-5953-*.patch: fix in
+      src/iri.c.
+    - CVE-2019-5953
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Mon, 08 Apr 2019 16:13:54 -0300
+
 wget (1.17.1-1ubuntu1.4) xenial-security; urgency=medium
 
   * SECURITY UPDATE: Cookie injection vulnerability
